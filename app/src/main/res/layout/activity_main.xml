@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6699ff"
+    android:orientation="horizontal"
+    >
+
+   <!-- <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="top"
+        android:textSize="30sp"
+        android:text="BackUp"/>-->
+
+    <Button
+        android:id="@+id/addressBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="通讯录"
+        android:textSize="22sp"
+        android:textAllCaps="false"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="showAB" />
+
+    <Button
+        android:id="@+id/memo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="备忘录"
+        android:textSize="22sp"
+        android:textAllCaps="false"
+        android:onClick="showMemo"
+        android:layout_alignBaseline="@+id/picture"
+        android:layout_alignBottom="@+id/picture"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
+
+    <Button
+        android:id="@+id/picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="图片"
+        android:textSize="22sp"
+        android:textAllCaps="false"
+        android:onClick="showPicture"
+        android:layout_alignBaseline="@+id/addressBook"
+        android:layout_alignBottom="@+id/addressBook"
+        android:layout_centerHorizontal="true" />
+
+    <!--<Button
+        android:id="@+id/buttonD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="History"
+        android:textSize="22sp"
+        android:textAllCaps="false"
+        android:layout_alignBaseline="@+id/buttonC"
+        android:layout_alignBottom="@+id/buttonC"
+        android:layout_toRightOf="@+id/buttonC"
+        android:layout_toEndOf="@+id/buttonC"
+        android:onClick="dialogA"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/buttonA"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lifecycle Method List"
+            android:layout_marginTop="19dp"
+            android:layout_below="@+id/buttonA"
+            android:layout_alignParentLeft="true"
+            android:textSize="25sp"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/list_text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_alignRight="@+id/buttonD"
+            android:layout_alignEnd="@+id/buttonD"
+            android:layout_marginBottom="43dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity Status"
+            android:textSize="25sp"
+            android:layout_above="@+id/status_text"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/status_text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="77dp" />
+
+    </LinearLayout>-->
+    <ImageView
+        android:id="，+@/id/image"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"/>
+
+</RelativeLayout>
+
