@@ -32,6 +32,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+    public void showMemo(View v){
+        Intent intent = new Intent(MainActivity.this, memo.class);
+        startActivity(intent);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
