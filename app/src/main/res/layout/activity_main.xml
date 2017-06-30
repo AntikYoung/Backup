@@ -108,7 +108,7 @@
 
     </LinearLayout>-->
     <ImageView
-        android:id="+@/id/image"
+        android:id="@+id/image"
         android:layout_height="match_parent"
         android:layout_width="wrap_content"/>
 
