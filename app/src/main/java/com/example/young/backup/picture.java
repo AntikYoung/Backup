@@ -8,9 +8,13 @@ import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+
+import com.example.young.backup.userPass.userPass;
 
 import java.io.FileNotFoundException;
 
@@ -37,6 +41,30 @@ public class picture extends AppCompatActivity {
 
         });
     }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.backup:
+
+            case R.id.restore:
+
+            case R.id.authentication:
+                Intent intent = new Intent(picture.this,userPass.class);
+                startActivity(intent);
+                return true;
+
+            case R.id.back:
+        }
+    }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (resultCode == RESULT_OK) {

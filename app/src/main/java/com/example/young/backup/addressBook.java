@@ -1,5 +1,6 @@
 package com.example.young.backup;
 
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.provider.ContactsContract;
@@ -8,13 +9,17 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.ListViewCompat;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.jar.Manifest;
+import android.Manifest;
+
+import com.example.young.backup.userPass.userPass;
 
 public class addressBook extends AppCompatActivity {
 
@@ -29,7 +34,7 @@ public class addressBook extends AppCompatActivity {
         ListView contactsView =(ListView) findViewById(R.id.contacts_view);
         adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,contactslist);
         contactsView.setAdapter(adapter);
-        if(ContextCompat.checkSelfPermission(this, Manifest.permssion.READ_CONTACTS)!=
+        if(ContextCompat.checkSelfPermission(this, Manifest.permission.READ_CONTACTS)!=
                 PackageManager.PERMISSION_GRANTED){
             ActivityCompat.requestPermissions(this,new String[]{
                     Manifest.permission.READ_CONTACTS },1 );
@@ -68,7 +73,7 @@ public class addressBook extends AppCompatActivity {
     @Override
     public  void onRequestPermissionsResult(int requestCode ,String[] permissions,
         int[] grantResults){
-            switch(resquestCode){
+            switch(requestCode){
                 case 1:
                     if (grantResults.length >0 && grantResults[0] ==
                         PackageManager.PERMISSION_GRANTED) {
@@ -81,6 +86,27 @@ public class addressBook extends AppCompatActivity {
 
             }
         }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.backup:
+
+            case R.id.restore:
+
+            case R.id.authentication:
+                Intent intent = new Intent(addressBook.this,userPass.class);
+                startActivity(intent);
+                return true;
+
+            case R.id.back:
+        }
+    }
     }
     /*public class PhoneInfo {
         private String name;

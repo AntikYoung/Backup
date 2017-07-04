@@ -22,6 +22,7 @@
         <activity android:name=".authentication" />
         <activity android:name=".memo" />
         <activity android:name=".Upload" />
+        <activity android:name=".userPass.userPass"/>
         <activity android:name=".Download"></activity>
     </application>
 

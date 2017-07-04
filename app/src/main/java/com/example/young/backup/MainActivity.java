@@ -15,6 +15,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.support.v7.app.AppCompatActivity;
 
+import com.example.young.backup.userPass.userPass;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -51,6 +53,11 @@ public class MainActivity extends AppCompatActivity {
             case R.id.restore:
 
             case R.id.authentication:
+                Intent intent = new Intent(MainActivity.this,userPass.class);
+                startActivity(intent);
+                return true;
+
+            case R.id.back:
         }
     }
 }

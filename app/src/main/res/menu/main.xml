@@ -1,12 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
      <item
-         android:id="@id/backup_item"
+         android:id="@+id/backup"
+         android:icon="@drawable/backup"
+         app:showAsAction="always"
          android:title="Backup"/>
      <item
          android:id="@+id/restore"
+         android:icon="@drawable/restore"
+         app:showAsAction="always"
          android:title="Restore"/>
+
      <item
          android:id="@+id/authentication"
-         android:title="authentication"/>
+         android:icon="@drawable/authen"
+         app:showAsAction="always"
+         android:title="Authentication"/>
+
+     <item
+         android:id="@+id/delete"
+         android:icon="@drawable/back"
+         app:showAsAction="always"
+         android:title="Back"/>
+
+
 </menu>

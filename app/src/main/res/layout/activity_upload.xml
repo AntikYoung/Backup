@@ -14,7 +14,7 @@
         android:visibility="visible" />
 
     <ProgressBar
-        android:id="@+id/download_progress"
+        android:id="@+id/upload_progress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -29,7 +29,7 @@
         android:secondaryProgress="0" />
 
     <TextView
-        android:id="@+id/download_message"
+        android:id="@+id/upload_message"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal|center_vertical"

@@ -98,8 +98,7 @@ public class Download extends Activity implements OnClickListener {
     /**
      * 多线程文件下载
      *
-     * @author yangxiaolong
-     * @2014-8-7
+     *  young
      */
     class downloadTask extends Thread {
         private String downloadUrl;// 下载链接地址

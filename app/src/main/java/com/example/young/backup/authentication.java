@@ -3,6 +3,8 @@ package com.example.young.backup;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 
 
 public class authentication extends FragmentActivity {
@@ -43,6 +45,24 @@ public class authentication extends FragmentActivity {
                 .replace(R.id.menu_fragment, newFragment).commit(); // 将左菜单默认VIEW替换为左菜单Fragment
 
 
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.backup:
+
+            case R.id.restore:
+
+            case R.id.authentication:
+
+            case R.id.back:
+        }
     }
 
 }
